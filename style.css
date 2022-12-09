@@ -209,7 +209,44 @@
     top: 31px;
     background: #282c3f;
   }
-  .restaurant-list {
+
+    #rList{
+    margin-bottom: 85px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-between;
+    padding-top: 39px;
+    margin-top: 25px;
+
+    }
+
+    #rList .place-link {
+        background: #fff;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #rList .list-item {
+        padding: 25px 25px 57px;
+        border: 1px solid #fff;
+        contain: content;
+      }
+
+      #rList .list-item:hover {
+        border-color: #d3d5df;
+        box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+      }
+
+      #rList .item-content {
+        width: 254px;
+        position: relative;
+      }
+
+
+
+
+  /* .restaurant-list {
     margin-bottom: 85px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -236,7 +273,7 @@
   .restaurant-list .item-content {
     width: 254px;
     position: relative;
-  }
+  } */
   .top-img {
     background: #eef0f5;
     width: 254px;
@@ -422,7 +459,6 @@
     transform: scale(1.06);
     cursor: pointer;
   }
-  Footer
-  © 2022 GitHub, Inc.
-  Footer navigation
-  Terms
+ 
+  
+ 
