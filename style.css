@@ -4,24 +4,37 @@
     font-family: 'Mulish', sans-serif;
   }
   
+html{
+
+    font-size: 62.5%;
+ }
+   /*header responsive code */
+   @media (max-width:300rem) {
+    html{
+        font-size: 60.5%;
+    }
+  }
+
+
+
   /* navbar section */
   .navbar {
-    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+    box-shadow: 0 1.5rem 4.0rem -2.0rem rgb(40 44 63 / 15%);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 8.0rem;
     background: #fff;
     z-index: 1000;
-    padding: 0 20px;
+    padding: 0 2.0rem;
   }
   .navbar .nav {
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: 120.0rem;
+    min-width: 120.0rem;
     position: relative;
     margin: 0 auto;
-    height: 80px;
+    height: 8.0rem;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -32,9 +45,9 @@
   }
   .navbar .left .logo {
     display: block;
-    height: 49px;
+    height: 4.9rem;
     transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-    margin-right: 16px;
+    margin-right: 1.6rem;
   }
   .navbar .left .logo:hover {
     transform: scale(1.1);
@@ -46,13 +59,13 @@
   .navbar .location-div {
     display: flex;
     align-items: center;
-    margin-left: 30px;
-    max-width: 300px;
-    height: 30px;
+    margin-left: 3.0rem;
+    max-width: 30.0rem;
+    height: 3.0rem;
     cursor: pointer;
-    margin-bottom: -1px;
-    padding-right: 10px;
-    font-size: 14px;
+    margin-bottom: -0.1rem;
+    padding-right: 1.0rem;
+    font-size: 1.4rem;
   }
   .navbar .right {
     position: relative;
@@ -61,18 +74,18 @@
     font-weight: 700;
     color: #3d4152;
     float: left;
-    padding-bottom: 2px;
-    border-bottom: 2px solid #3d4152;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid #3d4152;
   }
   .location-div .other:hover {
     color: #fc8019;
-    border-bottom: 2px solid #fc8019;
+    border-bottom: 0.2rem solid #fc8019;
   }
   .location-div .location {
     display: block;
     font-weight: 300;
-    padding-left: 5px;
-    margin-left: 5px;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
     color: #686b78;
   }
   .location-div .arrow-down {
@@ -89,18 +102,18 @@
     align-items: center;
   }
   .right .items li {
-    margin-right: 36px;
+    margin-right: 3.6rem;
     color: #3d4152;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     list-style-type: none;
   }
   .right .items .nav-item {
     display: flex;
     align-items: center;
-    padding-left: 28px;
+    padding-left: 2.8rem;
     position: relative;
-    height: 80px;
+    height: 8.0rem;
     cursor: pointer;
   }
   .right .items .nav-item a {
@@ -108,14 +121,14 @@
     align-items: center;
     text-decoration: none;
     color: #3d4152;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .nav-item a:hover {
     color: #fc8019;
   }
   
   .nav-item a span {
-    padding-left: 11px;
+    padding-left: 1.1rem;
   }
   .right .items li:last-child a svg {
     color: #60b246;
@@ -124,14 +137,14 @@
     position: relative;
     margin: 0 auto;
     align-items: center;
-    max-width: 1200px;
-    min-width: 1200px;
-    height: 20px;
+    max-width: 120.0rem;
+    min-width: 120.0rem;
+    height: 2.3rem; 
     overflow: hidden;
     position: relative;
-    background: #9a98f3;
-    color: #333;
-    font-size: 19px;
+    background: #d3d2eb;
+    color: rgb(247, 4, 4);
+    font-size: 1.9rem;
     text-decoration: springgreen;
     font-weight: 1000;
     /*border: 1px solid #4a4a4a;*/
@@ -155,14 +168,14 @@
   
   /* Content Section */
   .restaurants .container {
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: 120.0rem;
+    min-width: 120.0rem;
     position: relative;
     margin: 0 auto;
-    padding-top: 42px;
-    top: 80px;
+    padding-top: 4.2rem;
+    top: 8.0rem;
     background: #fff;
-    left: 31px;
+    left: 3.1rem;
   }
   .container .item-bar {
     display: flex;
@@ -171,9 +184,9 @@
   }
   .container .item-bar .number {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 2.8rem;
     color: #282c3f;
-    margin-top: -3px;
+    margin-top: -0.3rem;
   }
   .container .item-bar::after {
     color: #3d4152;
@@ -181,8 +194,8 @@
     content: '';
     left: 0;
     right: 0;
-    height: 1px;
-    top: 81px;
+    height: 0.1rem;
+    top: 8.1rem;
     background: #e9e9eb;
   }
   
@@ -191,10 +204,10 @@
     align-items: center;
   }
   .container .item-bar .filters div {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
     color: #686b78;
-    margin-left: 35px;
+    margin-left: 3.5rem;
     cursor: pointer;
     position: relative;
   }
@@ -205,18 +218,18 @@
     content: '';
     left: 0;
     right: 0;
-    height: 1px;
-    top: 31px;
+    height: 0.1rem;
+    top: 3.1rem;
     background: #282c3f;
   }
 
     #rList{
-    margin-bottom: 85px;
+    margin-bottom: 8.5rem;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     justify-content: space-between;
-    padding-top: 39px;
-    margin-top: 25px;
+    padding-top: 3.9rem;
+    margin-top: 2.5rem;
 
     }
 
@@ -228,18 +241,18 @@
       }
 
       #rList .list-item {
-        padding: 25px 25px 57px;
-        border: 1px solid #fff;
+        padding: 2.5rem 2.5rem 5.7rem;
+        border: 0.1rem solid #fff;
         contain: content;
       }
 
       #rList .list-item:hover {
         border-color: #d3d5df;
-        box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+        box-shadow: 0 0.4rem 0.7rem 0 rgb(218 220 230 / 60%);
       }
 
       #rList .item-content {
-        width: 254px;
+        width: 25.4rem;
         position: relative;
       }
 
@@ -275,9 +288,9 @@
     position: relative;
   } */
   .top-img {
-    background: #eef0f5;
-    width: 254px;
-    height: 160px;
+    background: #fff;
+    width: 25.4rem;
+    height: 31.0rem;
     position: relative;
   }
   .top-img img {
@@ -285,47 +298,47 @@
   }
   .status {
     position: absolute;
-    left: -8px;
+    left: -0.8rem;
     top: 0;
     color: #fff;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 500;
-    padding: 5px 9px 4px;
+    padding: 0.5rem 0.9rem 0.4rem;
     max-width: 50%;
     text-transform: uppercase;
   }
   .status::before {
     position: absolute;
-    bottom: -9px;
+    bottom: -0.9rem;
     content: '';
     width: 0;
     height: 0;
     border-style: solid;
     border-color: inherit;
     left: 0;
-    border-width: 9px 0 0 9px;
+    border-width: 0.9rem 0 0 0.9rem;
   }
   
   .place-name-div {
-    margin-top: 14px;
+    margin-top: 1.4rem;
   }
   .place-name-div .name {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
     /* to bring text in next line */
     word-break: break-word;
   }
   .place-name-div .food-items {
     color: #686b78;
-    font-size: 13px;
-    margin-top: 4px;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
     font-weight: 300;
   }
   .info-div {
     display: flex;
     align-items: center;
-    margin-top: 18px;
-    font-size: 12px;
+    margin-top: 1.8rem;
+    font-size: 1.2rem;
     justify-content: space-between;
     color: #535665;
     font-weight: 300;
@@ -333,42 +346,42 @@
   .info-div .rating {
     background-color: #db7c38;
     color: #fff;
-    height: 20px;
-    width: 36px;
-    padding: 0 5px;
+    height: 2.0rem;
+    width: 3.6rem;
+    padding: 0 0.5rem;
     font-weight: 400;
     display: flex;
     align-items: center;
   }
   .icon-star {
-    font-size: 10px;
-    margin-right: 4px;
+    font-size: 1.0rem;
+    margin-right: 0.4rem;
     position: relative;
-    top: -1px;
+    top: -0.1rem;
   }
   .offer-div {
-    border-top: 1px solid #e9e9eb;
-    padding-top: 14px;
-    margin-top: 14px;
+    border-top: 0.1rem solid #e9e9eb;
+    padding-top: 1.4rem;
+    margin-top: 1.4rem;
     color: #8a584b;
     display: flex;
     align-items: center;
     font-weight: 600;
   }
   .offer-div .icon-offer-filled {
-    font-size: 16px;
-    width: 20px;
-    height: 16px;
-    margin-right: 4px;
+    font-size: 1.6rem;
+    width: 2.0rem;
+    height: 1.6rem;
+    margin-right: 0.4rem;
   }
   
   .offer-div .offer-text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.2;
   }
   .offer-text .fa-tags {
-    margin-right: 2px;
+    margin-right: 0.2rem;
   }
   
   .place:hover .quick-view {
@@ -377,15 +390,18 @@
   
   .quick-view {
     color: #686b78;
-    font-size: 13px;
+    font-size: 1.3rem;
     visibility: hidden;
-    border-top: 1px solid #e9e9eb;
-    padding-top: 14px;
-    margin-top: 14px;
+    border-top: 0.0rem solid #e9e9eb;
+    padding-top: 5.8rem;
+    margin-top: 5.4rem;
     position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 14px;
+    left: 2.0rem;
+    right: 2.0rem;
+    bottom: 0.0rem;
+    cursor: pointer;
+    border-inline-color:#5d8ed5; ;
+    
   }
   
   .quick-view .view-btn {
@@ -396,10 +412,10 @@
     font-weight: 600;
   }
   .footer {
-    padding: 0 20px;
+    padding: 0 2.0rem;
     z-index: 10;
     background-color: #000;
-    min-height: 298px;
+    min-height: 10.0rem;
     width: 100%;
     color: #fff;
     overflow: scroll;
@@ -409,25 +425,25 @@
     display: flex;
     background-color: #000000;
     justify-content: space-around;
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: 120.0rem;
+    min-width: 120.0rem;
     margin: 0 auto;
-    padding: 76px 0;
+    padding: 7.6rem 0;
     height: 100%;
   }
   
   .points {
     color: #808080;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 600;
     /*    border: 1px solid white;*/
-    width: 300px;
-    margin: 26px 0px 10px 15px;
+    width: 30.0rem;
+    margin: 2.6rem 0rem 1.0rem 1.5rem;
     /*    padding: 15px 0px 0px 0px;*/
   }
   
   .footer-li {
-    padding: 20px 10px 2px 0px;
+    padding: 2.0rem 1.0rem 0.2rem 0rem;
   }
   
   .footer-ul {
@@ -438,7 +454,7 @@
   
   .footer-li a {
     color: #fff;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 300;
     text-decoration: none;
   }
@@ -448,10 +464,10 @@
   }
   
   .points img {
-    border: 2px solid #808080;
-    padding: 10px;
-    margin: 30px 0px 10px 57px;
-    border-radius: 10px;
+    border: 0.2rem solid #808080;
+    padding: 1.0rem;
+    margin: 3.0rem 0rem 1.0rem 5.7rem;
+    border-radius: 1.0rem;
     transition: transform 0.5s;
   }
   
@@ -459,6 +475,15 @@
     transform: scale(1.06);
     cursor: pointer;
   }
+
+
+   /*header responsive code 
+  @media (max-width:400px) {
+    html{
+        font-size: 40%;
+    }
+  }
+*/
  
   
  

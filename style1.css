@@ -130,7 +130,7 @@
     overflow: hidden;
     position: relative;
     background: #9a98f3;
-    color: #333;
+    color: rgb(252, 7, 7);
     font-size: 19px;
     text-decoration: springgreen;
     font-weight: 1000;
@@ -250,6 +250,8 @@
   }
   .top-img img {
     opacity: 1;
+    width:"254";
+    height:"160";
   }
   .status {
     position: absolute;

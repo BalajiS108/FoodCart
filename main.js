@@ -2,35 +2,98 @@ const restaurantData=[
     {
         id:1,
         rName:"Maharashtrian Thali",
-        details:"North Indian,Chinese, Beverages",
-        rating:3.8,
+        details:"North Indian,Chinese, Beverages,Snackes",
+        rating:3,
         time:44,
         cost:"200 FOR TWO",
         offer:50,
         code:"WELCOME50",
-        src:"./assets/img/01.webp"
+        src:"./assets/img/01.webp",
+        promoted:"Promoted"
     },
     {
         id:2,
-        rName:"Shri Kala",
-        details:"North Indian,Chinese, Beverages",
-        rating:4.2,
+        rName:"Shree Kala-Aaba Misalwale",
+        details:"Snacks,North Indian,Chinese, Beverages,Bakery, Dessert",
+        rating:4,
         time:30,
         cost:"250 FOR TWO",
         offer:30,
         code:"WELCOME50",
-        src:"./assets/img/02.webp"
+        src:"./assets/img/02.webp",
+        promoted:" "
     },
     {
         id:3,
-        rName:"Govindas",
+        rName:"Haldiram's Restaurant",
+        details:"Sweets,North Indian,Chinese, Beverages,Snacks",
+        rating:4.5,
+        time:20,
+        cost:"350 FOR TWO",
+        offer:20,
+        code:"WELCOME50",
+        src:"./assets/img/03.webp",
+        promoted:"Promoted"
+    },
+    {
+        id:4,
+        rName:"Gavkari",
         details:"North Indian,Chinese, Beverages",
         rating:4.5,
         time:20,
         cost:"350 FOR TWO",
         offer:20,
         code:"WELCOME50",
-        src:"./assets/img/03.webp"
+        src:"./assets/img/04.webp",
+        promoted:""
+    },
+    {
+        id:5,
+        rName:"Cafe Durga",
+        details:"Bakery, Dessert,North Indian,Chinese, Beverages",
+        rating:4.5,
+        time:20,
+        cost:"350 FOR TWO",
+        offer:20,
+        code:"WELCOME50",
+        src:"./assets/img/05.webp",
+        promoted:"Promoted"
+    },
+    {
+        id:6,
+        rName:"Hotel Peth Pujari",
+        details:"Maharashtrian,Beverages, Fast Food,Snaks",
+        rating:4.5,
+        time:20,
+        cost:"350 FOR TWO",
+        offer:20,
+        code:"WELCOME50",
+        src:"./assets/img/06.webp",
+        promoted:""
+    },
+    {
+        id:7,
+        rName:"Ganesh Bhel",
+        details:"Maharashtrian,Dessert,North Indian,Chinese, Beverages",
+        rating:4.5,
+        time:20,
+        cost:"350 FOR TWO",
+        offer:20,
+        code:"WELCOME50",
+        src:"./assets/img/07.webp",
+        promoted:"Promoted"
+    },
+    {
+        id:8,
+        rName:"Govindas",
+        details:"Chaat,North Indian,South,Indian,Fast Food,Beverages,Desserts",
+        rating:4.5,
+        time:20,
+        cost:"350 FOR TWO",
+        offer:20,
+        code:"WELCOME50",
+        src:"./assets/img/08.webp",
+        promoted:"Promoted"
     },
 ]
 
@@ -47,11 +110,9 @@ for (let item=0;item<restaurantData.length;item++){
     <div class="list-item">
       <div class="item-content">
         <div class="top-img">
-          <img
-            class="_2tuBw _12_oN"
-            alt="Waffl'd"
-            width="254"
-            height="160"
+          <img 
+            width="250"
+            height="120"
             src="${restaurantData[item].src}" 
         </div>
         <div
@@ -62,14 +123,13 @@ for (let item=0;item<restaurantData.length;item++){
             border-color: rgb(30, 32, 35) transparent;
           "
         >
-          <div class="status-title">Promoted</div>
+          <div class="status-title">${restaurantData[item].promoted}</div>
         </div>
         <div class="place-name-div">
           <div class="name">${restaurantData[item].rName}</div>
           <div
             class="food-items"
-            title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
-          >
+            title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets">
           ${restaurantData[item].details}
           </div>
         </div>
